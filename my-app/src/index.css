@@ -1,0 +1,138 @@
+body {
+     margin: 20px;
+     background-image: url(./tumblr_pfyxdgYYLC1xqepp2o1_640.webp);
+     background-repeat: no-repeat;
+     background-size: 100vw 100vh;
+     background-position: absolute;
+   }
+   
+ol, ul {
+     padding-left: 30px;
+     color: red;
+     font-family: 'Kalam', cursive;
+     font-size: 35px;
+     text-shadow: 5px 5px 5px black;
+   }
+   
+h1 {
+     margin: 0;
+     text-align: center;
+     color: red;
+     font-family: 'Kalam', cursive;
+     font-size: 70px;
+     text-shadow: 5px 5px 5px rgb(247, 82, 22);
+     animation: floating 3s ease-in-out infinite
+   }
+
+.board-row:after {
+     clear: both;
+     content: "";
+     display: table;
+     vertical-align: middle;
+   }
+   
+.status {
+     margin-bottom: 10px;
+     font-size: 35px;
+     font-weight: bold;
+     color: white;
+     font-family: 'Caveat', cursive;
+     text-decoration: underline 2px;
+   }
+
+.square {
+     background: #fff;
+     border: 1px solid #999;
+     float: left;
+     font-family: 'Kalam', cursive;
+     font-size: 210px;
+     font-weight: bold;
+     line-height: 1.1;
+     height: 12rem;
+     margin-top: 0px;
+     padding: 10px;
+     text-align: center;
+     width: 12rem;
+     background-image: url(./material.png);
+     background-position: center;
+   }
+   
+.square:focus {
+     outline: none;
+   }
+   
+.kbd-navigation .square:focus {
+     background: #ddd;
+   }
+   
+.game {
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+     align-items: center;
+     margin-top: 3rem;
+     justify-content: center;
+
+
+   }
+   
+.game-info {
+     margin-left: 30px;
+     margin-bottom: 10px;
+     font-size: 35px;
+     font-weight: bold;
+     color: red;
+     text-shadow: 5px 5px 5px black;
+     font-family: 'Kalam', cursive;
+     text-decoration: underline 2px;
+     animation: floating 3s ease-in-out infinite
+   }
+
+.game-board {
+    box-shadow: 15px 15px 15px black;
+   }
+   
+text {
+     text-align: center;
+     color: white;
+   }
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 12px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.game-info button {
+  height: 2rem;
+  width: 10rem;
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 10px 10px 10px black;
+  background-image: url(./material.png);
+  background-position: center;
+}
+/* button:hover {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {transform: translate3d(-1px, 0, 0);}
+  20%, 80% {transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+  40%, 60% {transform: translate3d(4px, 0, 0);}
+} */
+
