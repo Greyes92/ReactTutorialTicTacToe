@@ -50,10 +50,11 @@ h1 {
      font-weight: bold;
      line-height: 1.1;
      height: 12rem;
+     width: 12rem;
      margin-top: 0px;
      padding: 10px;
      text-align: center;
-     width: 12rem;
+     
      background-image: url(./material.png);
      background-position: center;
    }
@@ -91,6 +92,8 @@ h1 {
 
 .game-board {
     box-shadow: 15px 15px 15px black;
+    height: fit-content;
+    width: fit-content;
    }
    
 text {
