@@ -1,12 +1,19 @@
 body {
      margin: 20px;
-     background-image: url(./tumblr_pfyxdgYYLC1xqepp2o1_640.webp);
+     background: black url(./tumblr_pfyxdgYYLC1xqepp2o1_640.webp);
      background-repeat: no-repeat;
      background-size: 100vw 100vh;
      background-position: absolute;
      background-attachment: fixed;
+     /* -webkit-background-size: cover; */
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     /* background-size: cover; */
      min-width: fit-content;
      min-height: fit-content;
+     max-height: 100%;
+     max-width: 100%;
+     overflow: auto;
    }
    
 ol, ul {
@@ -94,11 +101,14 @@ h1 {
 
 .game-board {
     box-shadow: 15px 15px 15px black;
+    /* height: 100%;
+    width: 100%; */
     min-height: fit-content;
     min-width: fit-content;
     max-height: 100%;
     max-width: 100%;
     overflow: auto;
+    table-layout: fixed;
    }
    
 text {
